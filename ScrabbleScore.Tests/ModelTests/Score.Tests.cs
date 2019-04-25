@@ -41,11 +41,12 @@ namespace ScrabbleScore.Tests
           // Arrange
             
             Check newCheck = new Check ();
-            char letterA = 'a';
             // Act
-            // Assert
-            Assert.AreEqual (true, newCheck.CheckLetter(letterA));
             
+            // Assert
+            Assert.AreEqual (true, newCheck.CheckLetter('a'));
+                     
         }
+        
     }
 }
