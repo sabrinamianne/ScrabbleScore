@@ -14,6 +14,7 @@ namespace ScrabbleScore.Models
         {
             return _userInput;
         }
+        
     }
         public class Check
         {
@@ -25,17 +26,41 @@ namespace ScrabbleScore.Models
             public char [] valueEight = {'j', 'x'};
             public char [] valueTen = {'q', 'z'};
 
-            public bool CheckLetter(char letter)
+            public bool CheckLetter(char Letter)
             {
-                char Letter = letter;
-                if (valueOne.Contains(Letter))
-                {
-                    return true;
-                }
-                else 
-                {
-                    return false;
-                }
+                    if (valueOne.Contains(Letter))
+                    {
+                        return true;
+                    }
+                    else if (valueTwo.Contains(Letter))
+                    {
+                        return true;
+                    }
+                    else if (valueThree.Contains(Letter))
+                    {
+                        return true;
+                    }
+                    else if (valueFour.Contains(Letter))
+                    {
+                        return true;
+                    }
+                    else if (valueFive.Contains(Letter))
+                    {
+                        return true;
+                    }
+                    else if (valueEight.Contains(Letter))
+                    {
+                        return true;
+                    }
+                    else if (valueTen.Contains(Letter))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                    
             }
         }
     public class Score
